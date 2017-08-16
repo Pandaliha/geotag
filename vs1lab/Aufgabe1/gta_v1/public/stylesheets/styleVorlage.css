@@ -1,0 +1,46 @@
+*{box-sizing: border-box;}
+
+h1 {color: white;}
+
+header {
+    background-color: gray;
+    padding: 20px;
+}
+
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+#span1, #span2 {color: yellow;}
+
+.tagging    {width: 25%; float: left; padding: 10px;}
+
+label, input {float: left; clear: both; padding: 5px;}
+#submit     {clear: both; margin-top: 5px;}
+
+
+.discovery {width: 75%; float: right; padding: 10px;}
+#searchterm {float: left; margin-right: 4px;}
+button {margin-left: 3px; padding: 3px;}
+
+
+ul {list-style-type: none; float: left;}
+#li1 {color: white; float: left; background-color: #00B7FF; width: 100%; border: 1px solid white; padding: 3px;}
+#li2 {color: white;  float: left;  background-color: #00B7FF; width: 100%; border: 1px solid white; padding: 3px; }
+
+
+#result-img {width: 25%; float: right; margin-right: 25px; margin-left: 10px; margin-top: 15px;}
+
+
+.caption {clear: both; float: right;}
+
+
+footer {clear: both; background-color: gray; color: white; margin-top: 15px; padding: 3px;}
+#span3 {padding: 10px;}

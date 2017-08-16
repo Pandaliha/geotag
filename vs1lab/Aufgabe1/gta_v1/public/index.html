@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>GeoTagApp</title>
+		<link rel='stylesheet' href='stylesheets/styleVorlage.css'/>
+	</head>
+
+	<body>
+
+		<header>
+			<img src="./images/location.png" width="100"
+					alt="an image of a map and location">
+			<h1>GeoTagApp</h1>
+			<nav>
+				<a href="#">About</a> <span id="span1">|</span> <a href="#">Help</a> <span id="span2">|</span> <a
+					href="/">Home</a>
+			</nav>
+		</header>
+
+
+		<main>
+
+
+					<section class="tagging">
+					<h2 id="tag">Tagging</h2>
+
+				<!-- ############### Aufgabe1a Form1 Start -->
+
+					<fieldset id="field1">
+						<legend>Enter new GeoTag</legend>
+						<form id="tag-form" action="/tagging" method="post">
+						<label for="latitude">latitude</label>
+						<input required type="number" name="latitude" id="latitude" placeholder="latitude">
+						<label for="longitude">longitude</label>
+						<input required type="number" name="longitude" id="longitude" placeholder="longitude">
+						<label for="name">name</label>
+						<input required type="text" name="name" id="name" placeholder="max. 10 letters" maxlength="10">
+						<label for="hashtag">hashtag</label>
+						<input type="text" name="hashtag" id="hashtag" placeholder="# + max. 10 letters" maxlength="11" required pattern="#+">
+						<input type="submit" value="submit" id="submit">
+						</form>
+					</fieldset>
+
+				<!-- ############### Aufgabe1a Form1 Ende -->
+
+					</section>
+
+
+
+				    <section class="discovery">
+					<h2 id="disc">Discovery</h2>
+
+				<!-- ############### Aufgabe1a Form2 Start -->
+                        <fieldset id="field2">
+							<legend>Filter by Searchterm</legend>
+							<form id="filter-form" action="/discovery" method="post">
+							<input type="text" name="searchterm" id="searchterm" placeholder="search term">
+							<button>Apply</button>
+							<button>Remove</button>
+							</form>
+						</fieldset>
+				<!-- ############### Aufgabe1a Form2 Ende -->
+
+					<div class="taglist">
+						<ul id="results">
+							<li id="li1">Castle (49.01379, 8.404435) #sight</li>
+							<li id="li2">IWI (49.01379, 8.390071) #edu</li>
+						</ul>
+					</div>
+
+					<div class="tagmap">
+						<img id="result-img" src="./images/mapview.jpg" alt="a map with locations"/>
+						<div class="caption">Result map</div>
+					</div>
+
+				</section>
+
+
+		</main>
+
+		<footer>
+			<p><span id="span3">2017 by LKIT</span></p>
+		</footer>
+
+	</body>
+</html>
